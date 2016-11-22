@@ -1,0 +1,31 @@
+{
+  "name": "thunx",
+  "version": "0.0.0",
+  "description": "State Management Toolkit",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "rimraf lib/* && babel src -d lib",
+    "test": "babel-node node_modules/ospec/bin/ospec",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdougbrown/thunx"
+  },
+  "keywords": {
+    "state",
+    "thunk",
+    "functional"
+  },
+  "author": "Doug Brown <npm@douggo.com> (http://douggo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sdougbrown/thunx/issues"
+  },
+  "homepage": "https://github.com/sdougbrown/thunx#readme",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.11.4",
+    "ospec": "^1.1.0",
+    "rimraf": "^2.5.4"
+}
